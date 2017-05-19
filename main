@@ -1,0 +1,3 @@
+ser = serial.Serial('COM3', 9600)        ##### Arduino is in slot 3            #####
+bar=bytes("0,100\n", encoding="ascii")   ##### x is number of steps in "0,x\n" #####
+ser.write(bar)                           ##### this line activates the motor   #####
